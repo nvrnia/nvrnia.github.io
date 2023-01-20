@@ -8,7 +8,7 @@
     <style>
 
         body{
-            font-variant-caps: all-small-caps;
+            style = "text-transform:lowercase"
     
         }
 
@@ -79,20 +79,20 @@ function dispalyGreetings(today){
         hrs = today.getHours();
         name=""
         if (hrs < 12)
-            greet = 'Good Morning  '+name;
+            greet = 'g o o d  m o r n i n g  '+name;
         else if (hrs >= 12 && hrs <= 17)
-            greet = 'Good Afternoon '+name;
+            greet = 'g o o d  a f t e r n o o n '+name;
         else if (hrs >= 17 && hrs <= 24)
-            greet = 'Good Evening  '+name;
+            greet = 'g o o d  e v e n i n g  '+name;
         document.getElementById('greet').innerHTML = greet;
 
     }
 
     function dispalyDate(today) {  
        
-        const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-        const monthNames = ["January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December"
+        const days = ['s u n d a y ', 'm o n d a y ', 't u e s d a y ', 'w e d n e s d a y ', 't h u r s d a y ', 'f r i d a y ', 's a t u r d a y '];
+        const monthNames = ["j a n u a r y ", "f e b r u a r y ", "m a r c h ", "a p r i l ", "m a y ", "j u n e ",
+  "j u l y ", "a u g u s t ", "s e p t e m b e r ", "o c t o b e r ", "n o v e m b e r ", "d e c e m b e r "
 ];
 
         var dayName = days[today.getDay()];
