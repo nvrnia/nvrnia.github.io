@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greetings</title>
@@ -9,13 +12,15 @@
 
         body{
             text-transform: uppercase;
-            font-weight: bold;
+            font-weight: bold; 
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 3px;
     
         }
 
         .widget {
             padding: 8px 13px ;
-            font-family: gil sans, sans-serif;
+            font-family: 'Montserrat', sans-serif;
             color: #654e43;
             display: flex;
             justify-content:center;
@@ -37,12 +42,12 @@
 
         .date {
       
-            font-family: gil sans, sans-serif;
+            font-family: 'Montserrat', sans-serif;
             font-size: 2em;
         }
 
         .clock {
-            font-family: gil sans, sans-serif;
+            font-family: 'Montserrat', sans-serif;
             font-size: 20px;
         }
 
@@ -93,11 +98,8 @@ function dispalyGreetings(today){
 
     function dispalyDate(today) {  
        
-        const days = ['s u n d a y ', 'm o n d a y ', 't u e s d a y ', 'w e d n e s d a y ', 't h u r s d a y ', 'f r i d a y ', 's a t u r d a y '];
-        const monthNames = ["j a n u a r y ", "f e b r u a r y ", "m a r c h ", "a p r i l ", "m a y ", "j u n e ",
-  "j u l y ", "a u g u s t ", "s e p t e m b e r ", "o c t o b e r ", "n o v e m b e r ", "d e c e m b e r "
-];
-
+        const days = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
+        const monthNames = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
         var dayName = days[today.getDay()];
         var monthName = monthNames[today.getMonth()];
         var date = today.getDate();
